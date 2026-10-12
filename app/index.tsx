@@ -1,3 +1,4 @@
+import { useAuth } from "@clerk/expo";
 import { Redirect } from "expo-router";
 
 export default function Index() {
@@ -8,5 +9,5 @@ export default function Index() {
 
   // redirect to the tabs route if the user is signed in, otherwise redirect to the sign-in page
   if (isSignedIn) return <Redirect href="/(root)/(tabs)" />;
-  return <Redirect href="/(root)/(sign-in)" />;
+  return <Redirect href="/sign-up" />;
 }

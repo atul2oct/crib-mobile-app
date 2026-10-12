@@ -11,6 +11,6 @@ export default function MainScreen() {
     return <Redirect href={"/"} />;
   }
 
-  return <Stack/>;
+  return <Stack screenOptions={{ headerShown: false }} />;
 }
 // 35:13
